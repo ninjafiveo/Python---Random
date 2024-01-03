@@ -49,10 +49,12 @@ def temperature_converter():
         #! If it is F, run the function to convert it to C and output to the console.
         if unit == "F":
             print(f"{temp}° Fahrenheit is {convert_f_to_c(temp):.2f}° Celsius.")
+            #? Added new variable to pass through the record_temp function.
             new_temp = convert_f_to_c(temp)
         #! If it is C, run the function to convert it to F and output to the console.
         elif unit == "C":
             print(f"{temp}° Celsius is {convert_c_to_f(temp):.2f}° Fahrenheit.")
+            #? Added new variable to pass through the record_temp function.
             new_temp = convert_f_to_c(temp)
         # Hmmm... There's an error.
         else:
